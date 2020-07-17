@@ -1,0 +1,1043 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("desktop.png");
+}
+ #container{
+    height: 100vh;  
+    width: 1100px;
+    border: 2px solid white;
+    margin: auto;
+    position: relative;
+}
+/* for styling the host interface*/
+
+#display{
+    width: 300px;
+    height: 16px; 
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    color:white;
+    font-size: 30px;
+}
+#conection-container{
+    width:240px;
+    height: 162px;
+    position: absolute;
+    background-color: white;
+    top: 125px;
+    left: 130px;
+    overflow: hidden;
+    z-index: 300;
+    display: none;
+    animation: move-ul-4 0.7s;
+}
+@keyframes move-ul-4{
+    from{left: 70px;}
+    to{ left: 130px;}
+}
+#conection-container #slide{
+    width:100%;
+    height: 300px;
+    background-color: white;
+}
+#conection-container #slide #form{ 
+    width: 100%;
+    height: 150px;
+}
+#conection-container #slide #form #innerDiv{ 
+   width:170px;
+   height: 90px;
+   margin: auto;
+   margin-top: 12px;
+   box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+                15px 15px 15px rgba(0,0,0,0.2);
+   overflow: hidden;
+}
+#conection-container #slide #form #innerDiv #UserName{ 
+   margin-left:4px;
+   margin-top: 6px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid black;
+   font-size: 20px;
+}
+#conection-container #slide #form #innerDiv #create_1{ 
+    margin-left:49px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#conection-container #slide #online-names{ 
+    background-color: rgb(212, 209, 209);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    color: azure;
+}
+#conection-container #slide #online-names h4{ 
+    background: linear-gradient(to right,rgb(237, 238, 240),#046bfa);
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+}
+#conection-container #slide #online-names #list-ofName{ 
+    background-color: rgba(71, 72, 75, 0);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+} 
+
+#conection-container #slide #online-names #list-ofName  ol li{ 
+    font-size: 28px;
+   
+} 
+#conection-container #slide #online-names #list-ofName ol li:hover{ 
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color:rgb(223, 223, 230);
+} 
+/* this section handle the join div*/
+#join-container{
+    position: absolute;
+    width: 240px;
+    height: 160px;
+    background-color: white;
+    top: 125px;
+    left: 150px;
+    overflow: hidden;
+    z-index: 300;
+    display: none;
+    animation: move-ul-5 0.7s;
+}
+@keyframes move-ul-5{
+    from{left: 70px;}
+    to{ left: 150px;}
+}
+#join-container #second-innerdiv{
+    width:170px;
+    height: 90px;
+    margin: auto;
+    margin-top: 12px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+                 15px 15px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#join-container #second-innerdiv #second-userName-form #second-userName{
+    margin-left:4px;
+    margin-top: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+#join-container #second-innerdiv #second-userName-form  #second-create{
+    margin-left:49px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#table1,.first-row,.second-row,.third-row,.id1{
+    border: 1px solid black;
+    width: 245px;
+    height: 70px;     
+    border-collapse: collapse;
+    text-align: center;
+    border-color: blue;
+    color: white;
+    font-size: 50px;
+    font-weight: 20px;
+}
+/*  play box */
+#table1{
+    margin: auto;
+    margin-top: 320px;
+}
+#table1,.first-row,#a{
+    border-left: none;
+    border-top: none;
+}
+#table1,.first-row,#b{
+    border-top: none;
+}
+#table1,.first-row,#c{
+    border-top: none;
+    border-right: none;
+}
+#table1,.second-row,#d{
+    border-left: none;
+}
+#table1,.second-row,#f{
+    border-right: none;
+}
+#table1,.third-row,#g{
+    border-left: none;
+    border-bottom: none;
+}
+#table1,.third-row,#h{
+    border-bottom: none;
+}
+#table1,.third-row,#i{
+    border-bottom: none;
+    border-right: none;
+}
+
+/* table2 for left box  */
+#table2,.tr-2{
+    width: 30px;
+    height: 20px;
+}
+.tr-2{
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+}
+/* left box*/
+#table2{
+    position: absolute;
+    left:200px;
+    top:290px;
+}
+/* table3 for left box  */
+#table3,.tr-3{
+    width: 30px;
+    height: 20px;
+}
+.tr-3{
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+}
+/* right box */
+#table3{
+    position: absolute;
+    right:200px;
+    top:290px;
+}
+#name1{
+     text-align: start;
+     width:200px;
+     height:25px; 
+     position: absolute;
+     left:100px;
+     top:550px;
+     color: white; 
+     text-align: center;
+     font-size: 28px;
+     font-weight: 30px;
+}
+#name2{
+    width:200px;
+    height:25px ; 
+    position: absolute;
+    right: 90px;
+    top:550px;
+    color: white; 
+    text-align: center;
+    font-size: 28px;font-weight: 30px;
+}
+
+
+#winner{
+    position: absolute;
+    left:400px;
+    top: 49px;
+    width: 300px;
+    height: 140px;
+    border: dashed;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 68px;
+}
+#gameover{
+    position: absolute;
+    left:400px;
+    top: 610px;
+    width: 300px;
+    height: 120px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 90px;   
+}
+#nav-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     height: 40px;
+     width: 1000px;
+     position: absolute;
+     top: 3px;
+     left: 39px;
+}
+
+#reset{
+  /*  position: absolute;*/
+    left:6px;
+    top: 20px;
+    width: 70px;
+    height: 33px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 50px;
+    line-height: 30px;
+}
+/* online player*/
+#multiplayer{
+    min-width:155px;
+    height: 33px;
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 26px;
+    font-weight: 40px;
+    line-height: 34px;
+}
+#multiplayer ul li a {
+    display: none;
+    text-decoration: none;
+   
+}
+#multiplayer ul:hover{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#multiplayer ul{
+      position: absolute;
+      list-style: none;
+      left: 100px;
+      transition: left 0.7s;
+}
+#multiplayer:hover ul{          
+    background-color: blue;
+    width: 100px;
+    left: 150px;
+}
+
+#multiplayer:hover ul li a {
+    display:block;
+
+}
+
+#multiplayer ul li:hover a {
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+ 
+}
+
+/* bot or computer*/
+#bot{
+    min-width: 140px;
+    height: 33px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid blue;
+    color: white;
+    font-size: 28px;
+    font-weight: 35px;
+    line-height: 36px;
+}
+#multiplayer:hover,#bot:hover,#reset:hover{
+    cursor: pointer;
+    border: 1.6px solid blue;
+}
+#nxt_player{
+    width:160px;
+    height: 28px;
+    color: white;
+    position: absolute;
+    top: 240px;
+    left: 44%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 25px;
+    
+}
+#num_played{
+    color: white;
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    top:200px;
+    margin-left: 5px;
+    
+}
+/* for box selection */
+.nav1{
+    min-width:100px;
+    height: 33px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    line-height: 21px;
+    z-index: 10;
+}
+#drop_down1{
+    position: absolute;
+}
+.nav1 ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  
+}
+.nav1 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 50px;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+}
+.nav1 ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+.nav1 ul li ul {
+    display: none;
+    background: blue;
+    width: 65px;
+    position: absolute;
+}
+
+.nav1 ul li ul:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.nav1 ul li:hover ul{
+    display: block;
+    animation: move-ul-1 0.7s;
+}
+@keyframes move-ul-1{
+    from{left: 530px;}
+    to{ left: 579px;}
+}
+
+/* mode for the game*/
+.nav2{
+    max-width: 200px;
+    height: 33px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    line-height: 21px;
+}
+.nav2 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 50px;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+}
+.nav2 ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+.nav2 ul li ul {
+    display: none;
+    background: blue;
+    width: 65px;
+    position: absolute;
+}
+.nav2 ul li ul:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav2 ul li:hover ul{
+    display: block;
+    animation: move-ul-2 0.7s;
+}
+@keyframes move-ul-2{
+    from{left: 750px;}
+    to{ left: 775px;}
+}
+.nav2 ul li ul li{
+    width: 70px;
+}
+/* sound */
+.nav3{
+    max-width: 200px;
+    height: 33px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    line-height: 21px;
+}
+.nav3 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 50px;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+}
+.nav3 ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+.nav3 ul li ul {
+display: none;
+background: blue;
+width: 65px;
+position: absolute;
+}
+.nav3 ul li ul:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+.nav3 ul li:hover ul{
+    display: block;
+    animation: move-ul-3 0.7s;
+}
+@keyframes move-ul-3{
+    from{left: 888px;}
+    to{ left: 918.8px;}
+}
+.nav3 ul li ul li{
+    width: 70px;
+}
+.nav3 ul li ul li a{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:415px){
+#container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+#display{
+    width: 190px;
+    height: 16px; 
+    position: absolute;
+    top: 19px;
+    color: blue;
+    left: 12px;
+}
+#nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    width: 1000px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+#conection-container{
+    width:210px;
+    height: 130px;
+    border: 1px solid blue;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 82px;
+    overflow: hidden;
+    z-index: 300;
+    animation: move-ul-4 0.7s;
+}
+@keyframes move-ul-4{
+    from{top: 30px;}
+    to{ top: 70px;}
+}
+#conection-container #slide{
+    width:100%;
+    height: 300px;
+    background-color: white;
+}
+#conection-container #slide #form{ 
+    width: 100%;
+    height: 150px;
+}
+#conection-container #slide #form #innerDiv{ 
+   width:140px;
+   height: 75px;
+   margin: auto;
+   margin-top: 12px;
+   box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+                15px 15px 15px rgba(0,0,0,0.2);
+   overflow: hidden;
+}
+#conection-container #slide #form #innerDiv #UserName{ 
+   margin-left:4px;
+   margin-top: 6px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid black;
+   font-size: 12px;
+}
+#conection-container #slide #form #innerDiv #create_1{ 
+    margin-left:43px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+#conection-container #slide #online-names{ 
+    background-color: rgb(212, 209, 209);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    color: azure;
+}
+#conection-container #slide #online-names h4{ 
+    background: linear-gradient(to right,rgb(237, 237, 240),#046bfa);
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+
+}
+#conection-container #slide #online-names #list-ofName{ 
+    background-color: rgba(97, 98, 107, 0.404);
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+} 
+
+#join-container{
+    position: absolute;
+    width: 210px;
+    height: 130px;
+    background-color: white;
+    top: 70px;
+    left: 82px;
+    overflow: hidden;
+    z-index: 300;
+    display: none;
+    animation: move-ul-5 0.7s;
+}
+@keyframes move-ul-5{
+    from{top: 30px;}
+    to{ top: 70px;}
+}
+#join-container #second-innerdiv{
+    width:170px;
+    height: 90px;
+    margin: auto;
+    margin-top: 12px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+                 15px 15px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#join-container #second-innerdiv #second-userName-form #second-userName{
+    margin-left:4px;
+    margin-top: 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+}
+#join-container #second-innerdiv #second-userName-form  #second-create{
+    margin-left:49px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#table1,.first-row,.second-row,.third-row,.id1{
+    border: 1px solid black;
+    width: 245px;
+    height: 70px;     
+    border-collapse: collapse;
+    text-align: center;
+    border-color: blue;
+    color: white;
+    font-size: 50px;
+    font-weight: 20px;
+}
+
+#table1,.first-row,.second-row,.third-row,.id1{
+    border: 1px solid black;
+    width: 245px;
+    height: 70px;     
+    border-collapse: collapse;
+    text-align: center;
+    border-color: blue;
+    color: white;
+    font-size: 40px;
+    font-weight: 18px;
+}
+#table1{
+    margin: auto;
+    margin-top: 320px;
+}
+#table1,.first-row,#a{
+    border-left: none;
+    border-top: none;
+}
+#table1,.first-row,#b{
+    border-top: none;
+}
+#table1,.first-row,#c{
+    border-top: none;
+    border-right: none;
+}
+#table1,.second-row,#d{
+    border-left: none;
+}
+#table1,.second-row,#f{
+    border-right: none;
+}
+#table1,.third-row,#g{
+    border-left: none;
+    border-bottom: none;
+}
+#table1,.third-row,#h{
+    border-bottom: none;
+}
+#table1,.third-row,#i{
+    border-bottom: none;
+    border-right: none;
+}
+#table2{
+    position: absolute;
+    left:48px;
+    top: 43px;
+    border-color: transparent;
+}
+.tr-2{
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+}
+#table3{
+    position: absolute;
+    right:48px;
+    top: 43px;
+    border-color: transparent;
+}
+.tr-3{
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+}
+#name1{
+    width:140px;
+    overflow: hidden;
+     height:20px; 
+     position: absolute;
+     left:0px ;
+     top:291px;
+     font-size: 17px;
+     font-weight: 12.9px;
+     line-height: 19px;
+}
+#name2{
+     width:140px;
+     height:20px ; 
+     overflow: hidden;
+     position: absolute;
+     right:0px;
+     top:291px;
+     color: white;
+     font-size: 17px;
+     font-weight: 12.9px;
+     line-height: 19px;
+}
+#winner{
+    position: absolute;
+    left:26%;
+    top: 50px;
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: 25px;
+    overflow: hidden;
+}
+#gameover{
+    position: absolute;
+    left:99px;
+    top: 534px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 30px;
+    line-height: 30px;
+    border-color: transparent;
+}
+#reset{
+    position: absolute;
+    left: 42%;
+    top: 534px;
+    width: 65px;
+    height: 20px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 29px;
+    line-height: 16px;
+}
+#nxt_player{
+    width:160px;
+    height: 28px;
+    color: white;
+    position: absolute;
+    top: 261px;
+    left: 98px;
+    text-align:center;
+    font-size: 15px;
+    font-weight: 25px;
+}
+#num_played{
+    color: white;
+    width: 155px;
+    height: 50px;
+    position: absolute;
+    top:200px;
+    left: 100px;
+    text-align: center;
+}
+#multiplayer{
+    min-width: 99px;
+    height: 20px;
+    border: 1px solid blue;
+    font-size: 18px;
+    line-height: normal;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+#multiplayer ul{
+    position: absolute;
+    left: -30px;
+    transition: left 0.7s;
+}
+#multiplayer:hover ul{
+    background-color: blue;
+    width: 80px;
+    position: absolute;
+    top: 23px;
+    left: 14px;
+}
+
+#bot{
+    min-width: 80px;
+    height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid blue;
+    font-size: 18px;
+    line-height:18px;
+    top: 17px;
+    color: white;
+}
+
+/*select box*/
+.nav1{                 
+    height: 20px;
+    border: 1px solid blue;
+    line-height: 7px;
+    border-radius: 3px;
+    padding: 0px;
+ 
+}
+.nav1 ul li a{
+   min-width:81px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+}
+.nav1 ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+.nav1 ul li ul {
+    display: none;
+    background: blue;
+    width: 60px;
+    position: absolute;
+    left: 260px;
+    overflow-y: hidden;
+}
+.nav1 ul li ul li{
+    color: black;
+
+    
+}
+.nav1 ul li ul li a{
+    margin-left: auto;
+    text-align: start;
+    padding-left: 28px;
+
+}
+.nav1 ul li ul:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav1 ul li:hover ul{
+    display: block;
+    animation: move-ul 0.7s;
+}
+@keyframes move-ul{
+    from{left: 210px;}
+    to{left: 260px;  }
+}
+/*mode*/
+.nav2{
+    min-width: 65px;
+    height: 20px;
+    border: 1px solid blue;
+    position: absolute;
+    left:6%;
+    top: 534px;
+    line-height: 11px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.nav2 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 50px;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+    line-height: 7.7px;
+}
+.nav2 ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+.nav2 ul li ul {
+display: none;
+background: blue;
+width: 60px;
+}
+.nav2 ul li ul:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav2 ul li:hover ul{
+    display: block;
+    position: absolute;
+    top: -43.5px;
+    width: 60px;
+    left: 5px;
+}
+.nav2 ul li ul li{
+    width: 70px;
+
+}
+/*sound*/
+.nav3{
+    min-width: 58px;
+    height: 20px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 534px;
+    left: 81%;
+    line-height: 9px;
+    text-align: center;
+    font-size: 18px;
+}
+.nav3 ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+}
+.nav3 ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+}
+.nav3 ul li ul {
+    display: none;
+    background: blue;
+    width: 65px;
+    transition: left 3s;
+}
+.nav3 ul li ul:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+.nav3 ul li:hover ul{
+    display: block;
+    position: absolute;
+    top: -40px;
+}
+.nav3 ul li ul li{
+    width: 70px;
+}
+.nav3 ul li ul li a{
+    font-size: 14px;
+}
+#nav-container{
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    margin-right: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+/*for controling size of drop down menu*/
+ul li ul {
+    display: none;
+    background: blue;
+    width: 59px;
+    }
+    ul li ul li{
+        width: 62px;
+    }
+}

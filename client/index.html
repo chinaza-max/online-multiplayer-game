@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="src/tic.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div><h2 id="display"></h2></div>      
+        <div id="conection-container">
+            <div id="slide">
+                <div id="form">
+                    <div id="innerDiv">
+                        <form id="username-form" >
+                            <input  id="UserName"  placeholder="Enter UserName" required>
+                        </br>
+                            <button id="create_1">create</button>
+                        </form>
+                    </div>
+                </div>             
+                <div id="online-names">
+                    <h4>select opponent </h4>
+                    <div id="list-ofName">
+                        <ol id="orderList">
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="join-container">
+            <div id="second-innerdiv">
+                <form id="second-userName-form">
+                    <input id="second-userName" placeholder="Enter UserName" required> 
+                    </br>
+                    <button id="second-create">create</button>
+                </form>
+            </div>
+        </div>
+       
+       <table id="table1">
+           <tr class='first-row'>
+                <td class='id1' id='a'></td>
+                <td  class='id1' id='b'></td>
+                <td   class='id1' id='c'></td>
+           </tr> 
+           <tr class="second-row"> 
+                <td  class='id1' id='d'></td>
+                <td  class='id1' id='e'></td>
+                <td  class='id1' id='f'></td>
+           </tr> 
+           <tr class="third-row">
+                <td   class='id1' id='g'></td>
+                <td   class='id1' id='h'></td>
+                <td   class='id1' id='i'></td>
+            </tr>
+       </table>
+
+       <table id='table2'>
+            <tr class="tr-2"><td class="tr-2" id="a10"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a9"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a8"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a7"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a6"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a5"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a4"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a3"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a2"></td></tr>
+            <tr class="tr-2"><td class="tr-2" id="a1"></td></tr>
+        </table> 
+        <table id='table3'>
+            <tr class="tr-3"><td class="tr-3"id="b10"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b9"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b8"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b7"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b6"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b5"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b4"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b3"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b2"></td></tr>
+            <tr class="tr-3"><td class="tr-3" id="b1"></td></tr>
+        </table> 
+        <div id='name2'></div>
+        <div id='name1'></div>
+        <div id='winner'></div>
+        <div id="gameover"></div>
+      
+        <div id="nav-container">
+            <div id='reset'>reset</div>
+            <div id='multiplayer'><h5>Online Player</h5>
+                <ul>
+                    <li id="host"><a>host</a></li>
+                    <li   id="join"><a>join</a></li>
+                </ul>
+            </div>
+            <div id='bot'>Computer</div>
+        <div class="nav1">
+            <ul>            
+                <li><a href="#">Select Box</a>
+                    <ul>
+                        <li class="box" id="one"><a href="#">1</a></li>
+                        <li class="box" id="two"><a href="#">2</a></li>
+                        <li class="box" id="three"><a href="#">3</a></li>
+                        <li class="box" id="four"><a href="#">4</a></li>
+                        <li class="box" id="five"><a href="#">5</a></li>
+                        <li class="box" id="six"><a href="#">6</a></li>
+                        <li class="box" id="seven"><a href="#">7</a></li>
+                        <li class="box" id="eight"><a href="#">8</a></li>
+                        <li class="box" id="nine"><a href="#">9</a></li>
+                        <li class="box" id="ten"><a href="#">10</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </div>
+
+            <div class="nav2">
+                <ul >
+                    <li><a href="#">Mode</a>
+                        <ul>
+                            <li id="easy"><a href="#">easy</a></li>
+                            <li id="hard"><a href="#">hard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav3">
+                <ul >
+                    <li><a href="#">Sound</a>
+                        <ul>
+                            <li id="on" ><a h ref="#">ON</a></li>
+                            <li id="off"><a href="#">OFF</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+         <div id='nxt_player'></div>
+         <div id='num_played'></div>
+         <audio  loop id='music'>
+               <source src='AUD-20200609-WA0006.mp3' src='Stormzy-ft-Ed-Sheeran-Burna-Boy-Own-It.mp3'>
+               <source src='Stormzy-ft-Ed-Sheeran-Burna-Boy-Own-It.mp3'>
+         </audio>
+
+     </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>  
+</body>
+</html>
